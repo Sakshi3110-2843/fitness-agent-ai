@@ -21,7 +21,19 @@
 
 ## 🖥️ App Preview
 
-> 📸 *Screenshots coming soon — run it locally to see the full experience!*
+### 🏠 Input Form
+![Home](assets/home.png)
+
+### 🥗 Meal Plan
+![Meal](assets/meal.png)
+
+### 💪 Workout Plan
+![Workout](assets/workout.png)
+
+### 🛡️ Safety Review
+![Safety](assets/safety.png)
+
+---
 
 ## 🧠 How It Works
 You fill the form
@@ -35,12 +47,17 @@ Agent 2 → Reviews your Progress + Safety checks
 You get a complete, personalized fitness plan
 
 ## 🛠️ Tech Stack
+
+```text
 Frontend     →  Streamlit
 AI Agents    →  CrewAI (2 agents, 2 tasks)
 LLM          →  Groq — llama-3.3-70b-versatile
 Calculations →  Custom BMI / BMR / TDEE / Macro engine
 Safety       →  Custom guardrails layer
 Env Mgmt     →  python-dotenv
+```
+
+---
 
 ## 🚀 Get Started in 5 Minutes
 
@@ -74,16 +91,19 @@ streamlit run app.py
 Open **http://localhost:8501** and start your fitness journey 🎯
 
 ## 📁 Project Structure
+
+```text
 fitness-agent-ai/
 │
-├── 🧠 agents.py          → AI agent definitions (Planner + Reviewer)
-├── 📋 tasks.py           → Task prompts for each agent
-├── 🖥️  app.py             → Streamlit UI + main app logic
-├── 🔧 tools.py           → BMI, BMR, TDEE, Macro calculators
-├── 🛡️  guardrails.py      → Safety validation layer
-├── 📦 requirements.txt   → Dependencies
-├── 🔐 .env               → API keys (never pushed to GitHub)
-└── 🚫 .gitignore         → Ignores .env and cache files
+├── agents.py          → AI agent definitions (Planner + Reviewer)
+├── tasks.py           → Task prompts for each agent
+├── app.py             → Streamlit UI + main app logic
+├── tools.py           → BMI, BMR, TDEE, Macro calculators
+├── guardrails.py      → Safety validation layer
+├── requirements.txt   → Dependencies
+├── .env               → API keys (never pushed to GitHub)
+└── .gitignore         → Ignores .env and cache files
+```
 
 ## ⚠️ Rate Limit Notice
 
